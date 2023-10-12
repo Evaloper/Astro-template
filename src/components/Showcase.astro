@@ -1,0 +1,79 @@
+---
+import logos from "../images/framework-logos.png";
+import logosSmall from "../images/framework-logos-small.png";
+import { fade } from "astro:transitions";
+import { string } from "astro/zod";
+
+export interface Props {
+  heading?: string;
+  text?: string;
+  btnText?: string;
+  showExtra?: boolean;
+}
+
+const {
+  heading = "Your Hair Deserves The Best",
+  text = "We help you feel more confident and beautiful through thoughtful and unique services just for you. Take advantage of the advice of our hairdressing experts and make an appointment now.",
+  btnText = "See our services",
+  showExtra = false
+  } = Astro.props as Props;
+---
+
+<section class="showcase">
+  <div class="showcase-text">
+    <h1>{heading}</h1>
+    <p>
+      {text}
+    </p>
+    <button class="showcase-btn">{btnText}</button>
+  </div>
+</section>
+
+<style>
+  .showcase {
+    height: 80vh;
+    background-color: var(--color-primary);
+    background-image: url(https://i.pinimg.com/564x/ca/df/3b/cadf3b56cbdd5423056a1bf269831e9f.jpg);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    position: relative;
+  }
+
+  .showcase-blog {
+    min-height: 300px;
+  }
+
+  .showcase-text {
+    max-width: 500px;
+    color: #e0d6d6;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .showcase h1 {
+    font-size: 50px;
+    color: #e0d6d6;
+    margin-bottom: 20px;
+  }
+
+  .showcase p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .showcase-btn {
+    background-color: var(--color-secondary);
+    padding: 15px;
+    width: 20vw;
+    border: none;
+    color: #e0d6d6;
+    font-size: 16px
+  }
+
+</style>

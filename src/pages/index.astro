@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Showcase from "../components/Showcase.astro";
+import Features from "../components/Features.astro";
+import Tabs from "../components/Tabs.astro";
+---
+
+<Layout title="TeFex Cloth Line">
+  <Showcase showExtra={true} />
+
+  <section class="container">
+    <div class="about-us">
+      <div>
+        <img src="../images/aboutus.jpeg" />
+      </div>
+      <div>
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
+          deserunt inventore ut voluptate, officia maiores repellat tenetur
+          praesentium omnis est ex tempora a necessitatibus reiciendis at et
+          dignissimos. Ipsam eius consequuntur cupiditate aperiam porro, esse
+          laborum impedit nesciunt ut voluptatum assumenda aspernatur libero iusto
+          error molestias dolorum, necessitatibus labore?
+        </p>
+      </div>
+    </div>
+    <h2>Exclusive Services</h2>
+    <!-- Tabs -->
+    <!-- Add activeTextColor='preferred color' to change the link text color to any preferred color  -->
+    <Tabs
+      headings={["BRAIDS & TWISTS", "HAIR COLOR", "HAIR EXTENSION", "HAIR CUT", "WEAVING", "DREAD LOCK"]}
+      contents={[
+        "Braids & Twists adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+        "Hair Color adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+        "Hair Extension adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+        "Hair Cut adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+        "Weaving adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+        "Dread Lock adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+      ]}
+    /> 
+  </section>
+  
+  <Features />
+  <section class="page-content"></section>
+</Layout>
