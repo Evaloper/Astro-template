@@ -1,0 +1,57 @@
+---
+import Card from "./Card.astro";
+const featuresData = [
+  {
+    title: "Men Haircut",
+    body: "aperiam porro, esse laborum impedit nesciunt ut voluptatum assumenda aspernatur libero iusto error molestias dolorum, necessitatibus labore?",
+  },
+  {
+    title: "Women Cut",
+    body: "Naperiam porro, esse laborum impedit nesciunt ut voluptatum assumenda aspernatur libero iusto error molestias dolorum, necessitatibus labore?",
+  },
+  {
+    title: "Weaving & Braiding",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum deserunt inventore ut voluptate, officia maiores repellat tenetur praesentium omnis est ex tempora a necessitatibus reiciendis at et dignissimos.",
+  },
+  {
+    title: "Hair Coloring",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum deserunt inventore ut voluptate, officia maiores repellat tenetur praesentium omnis est ex tempora a necessitatibus reiciendis at et dignissimos.",
+  },
+  {
+    title: "Kids Cut",
+    body: "Ipsam eius consequuntur cupiditate aperiam porro, esse laborum impedit nesciunt ut voluptatum assumenda aspernatur libero iusto error molestias dolorum, necessitatibus labore?",
+  },
+  {
+    title: "Kids Weaving",
+    body: "Ipsam eius consequuntur cupiditate aperiam porro, esse laborum impedit nesciunt ut voluptatum assumenda aspernatur libero iusto error molestias dolorum, necessitatibus labore?",
+  },
+];
+---
+
+<section class="features">
+  <div class="container">
+    {
+      featuresData.map((feature) => (
+        <Card>
+          <h3>{feature.title}</h3>
+          <p>{feature.body}</p>
+        </Card>
+      ))
+    }
+  </div>
+</section>
+<style>
+  .features .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+    margin: 30px auto;
+  }
+
+  @media (max-width: 500px) {
+    .features .container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

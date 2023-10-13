@@ -1,55 +1,55 @@
 ---
-import logo from '../images/logo.svg'
+import logo from "../images/logo.svg";
 ---
+
 <header class="header">
-    <div class="container">
-      <div class="logo">
-        <a href="index.html">
-          <img src={logo} alt="" />
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/blog ">Blog</a></li>
-        </ul>
-      </nav>
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src={logo} alt="" />
+      </a>
     </div>
-  </header>
-  <style>
-    /* Header */
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog ">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<style>
+  /* Header */
 
-.header {
-  height: 70px;
-  width: 100%;
-  background: var(--color-secondary);
-  position: fixed;
-  z-index: 1;
-}
+  .header {
+    height: 70px;
+    width: 100%;
+  }
 
-.header .container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
+  .header .container {
+    height: 100%;
+    display: flex;
+    background-color: #b49377;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #7c6856;
+  }
 
-.header img {
-  height: 35px;
-  vertical-align: middle;
-}
+  .header img {
+    height: 35px;
+    vertical-align: middle;
+  }
 
-.header nav ul {
-  display: flex;
-}
+  .header nav ul {
+    display: flex;
+  }
 
-.header nav ul li {
-  padding: 0 10px;
-}
+  .header nav ul li {
+    padding: 0 10px;
+  }
 
-.header nav ul li a {
-  color: #fff;
-}
-  </style>
+  .header nav ul li a {
+    color: #fdfdfd;
+  }
+</style>

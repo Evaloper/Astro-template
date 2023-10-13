@@ -1,41 +1,88 @@
 <footer class="footer">
-  <div class="container">
-    <div>
-      <h3>Astro</h3>
-      <p>
-        This is a demo website to show how the Astro framework works. Visit the <a
-          href="https://astro.build">official website</a
-        > to learn more.
-      </p>
+  <div class="">
+    <div class="container">
+      <div class="newsletter">
+        <h3>Newsletter</h3>
+        <div>
+          <p>Sign up for mailing list to get latest updates and offers.</p>
+          <form>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Input email"
+              class="news-inp"
+            />
+            <button class="sub-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="/Blog">Blog</a></li>
+        </ul>
+      </div>
+      <div class="address">
+        <h3>Contact Address</h3>
+        <p>office Address: 34c refinery Road, NYC.</p>
+        <p>Telephone: + 45 345 678 982</p>
+        <p>Email: info@companyname.com</p>
+      </div>
     </div>
-    <div>
-      <h3>Links</h3>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/Blog">Blog</a></li>
-      </ul>
-    </div>
+    <div class="copyright"></div>
   </div>
 </footer>
 
 <style>
   footer {
-    background: var(--color-secondary);
+    background: var(--color-primary);
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     margin-top: 60px;
+    font-size: 14px;
   }
 
   .footer .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+  }
+
+  .news-inp {
+    padding: 0.5rem;
+    border: none;
+  }
+
+  .sub-btn {
+    background-color: var(--color-secondary);
+    padding: 0.5rem;
+    border: none;
+    color: #fff;
+  }
+
+  .newsletter,
+  .links {
+    margin-bottom: 40px;
+  }
+
+  .newsletter,
+  .address {
+    width: 40%%;
+  }
+
+  .links {
+    width: 20%;
+  }
+
+  .copyright {
+    border-bottom: 1px solid #4542425d;
   }
 
   .footer a {
-    color: #a741ff;
+    color: rgb(60, 60, 219);
   }
 
   .footer a:hover {
@@ -44,6 +91,7 @@
 
   .footer h3 {
     margin-bottom: 10px;
+    font-size: 1.17rem;
   }
 
   .footer div:nth-child(1) {
@@ -51,8 +99,12 @@
   }
 
   @media (max-width: 500px) {
-    .footer div:nth-child(2) {
+    /* .footer div:nth-child(2) {
       display: none;
+    } */
+
+    .footer .container {
+      display: block;
     }
   }
 </style>
