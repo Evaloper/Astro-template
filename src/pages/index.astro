@@ -11,7 +11,10 @@ import Contactus from "../components/contactus.astro";
   <Showcase showExtra={true} />
   <Aboutus />
   <section class="container services">
-    <h2>Exclusive Services</h2>
+    <div class="service-sect">
+      <h2 class="discover">Discover</h2>
+    <h2 class="service-heading">Exclusive Services</h2>
+    </div>
     <!-- Tabs -->
     <!-- Add activeTextColor='preferred color' to change the link text color to any preferred color  -->
     <Tabs
@@ -39,6 +42,22 @@ import Contactus from "../components/contactus.astro";
 
 <style>
   .services {
-    margin-top: 50px;
+    margin-top: 70px;
   }
+
+  .service-sect{
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .discover {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 70px;
+    letter-spacing: 8px;
+    font-weight: lighter;
+    color: var(--color-secondary);
+  }
+
+  .service-heading {
+    letter-spacing: 8px;
 </style>
