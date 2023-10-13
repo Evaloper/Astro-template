@@ -29,6 +29,10 @@ const featuresData = [
 ---
 
 <section class="features">
+  <div class="price">
+    <h2 class="amazing">Amazing</h2>
+    <h2 class="price-heading">Pricing Plan</h2>
+  </div>
   <div class="container">
     {
       featuresData.map((feature) => (
@@ -47,6 +51,23 @@ const featuresData = [
     grid-gap: 20px;
     padding: 0 20px;
     margin: 30px auto;
+  }
+
+   .price{
+    text-align: center;
+    margin: 70px 0;
+   }
+
+  .amazing {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 70px;
+    letter-spacing: 8px;
+    font-weight: lighter;
+    color: var(--color-secondary);
+  }
+
+  .price-heading {
+    letter-spacing: 8px;
   }
 
   @media (max-width: 500px) {

@@ -1,0 +1,99 @@
+---
+import Card from "./Card.astro";
+---
+
+<section class="container">
+  <div class="contact-us">
+    <div class="contact">
+      <h2 class="hurry">Hurry</h2>
+      <h2 class="contact-us-heading">Contact Us</h2>
+    </div>
+    <div class="contact-sect">
+      <div class="contact-inp">
+        <form>
+          <div class="input">
+            <label for="name">Your Name (required)</label><br />
+            <input type="text" name="" id="" />
+          </div>
+          <div class="input">
+            <label for="email">Your Email(required)</label><br />
+            <input type="email" name="email" id="" />
+          </div>
+          <div class="input">
+            <label for="subject">Subject</label><br />
+            <input type="email" name="email" id="" />
+          </div>
+          <div class="input">
+            <label for="message">Your Message</label><br />
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="contact-card">
+        <Card dark={true}>
+          <h3>Get in Touch</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
+            deserunt inventore ut voluptate, officia maiores repellat tenetur
+            praesentium omnis est ex tempora a necessitatibus reiciendis at et
+            dignissimos. Ipsam eius consequuntur cupiditate aperiam porro, esse
+            laborum impedit nesciunt ut voluptatum assumenda aspernatur libero
+            iusto error molestias dolorum, necessitatibus labore?
+          </p>
+        </Card>
+    </div>
+  </div>
+</section>
+
+<style>
+    .contact {
+        margin: 70px 0;
+    }
+  .contact-us {
+    text-align: center;
+  }
+
+  .contact-sect {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  .contact-inp {
+    width: 70%;
+  }
+
+  form {
+    margin: auto 80px;
+  }
+
+  .input {
+    display: block;
+    text-align: left;
+  }
+
+  .input input{
+    padding: 0.4rem 8rem;
+  }
+
+  textarea{
+    padding: 0 4.9rem;
+  }
+
+  .contact-card {
+    width: 30%;
+  }
+
+  .hurry {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 70px;
+    letter-spacing: 8px;
+    font-weight: lighter;
+    color: var(--color-secondary);
+  }
+
+  .contact-us-heading {
+    letter-spacing: 8px;
+  }
+</style>
